@@ -1,5 +1,7 @@
 # ins: clay silt and sand as inputs (in %)
 # outs: texture name and saturated hydraulic conductivity (in cm per day)
+# follows the to USDA soil texture triangle 
+# Ksat values from Carsel & Parrish, 1988 
 def soiltext(cl,si,sa):
 
     texture = np.nan 
