@@ -1,6 +1,3 @@
-
-def soiltext(cl,si,sa):
-
     if (0 < cl < 10) and (0 < si < 15) and ( 85 < sa < 100):
         texture = 'SAND'
         WP2FC = 0.50
@@ -22,7 +19,7 @@ def soiltext(cl,si,sa):
     if (0 < cl < 27) and (50 < si < 88) and ( 0 < sa < 50):
         texture = 'SILO'
         WP2FC = 0.35
-    if (28 < cl < 40) and (15 < si < 53) and ( 20 < sa < 40):
+    if (27 < cl < 40) and (15 < si < 53) and ( 20 < sa < 45):
         texture = 'CLLO'
         WP2FC = 0.61
     if (0 < cl < 12) and (80 < si < 100) and ( 0 < sa < 20):
@@ -34,8 +31,6 @@ def soiltext(cl,si,sa):
     if (40 < cl < 60) and (40 < si < 60) and ( 0 < sa < 20):
         texture = 'SICL'
         WP2FC = 0.66
-    if (55 < cl < 100) and (0 < si < 40) and ( 0 < sa < 45):
+    if (40 < cl < 100) and (0 < si < 40) and ( 0 < sa < 45):
         texture = 'CLAY'
         WP2FC = 0.71
-
-    return np.array([texture,WP2FC])
