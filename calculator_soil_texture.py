@@ -1,10 +1,8 @@
 def soiltext(cl,sa,si):
-    global texture
-
-    if (sa >= 0.85) and (si + cl*1.5 <= 0.15):
+    if (sa >= 0.85) and (si + cl <= 0.15):
         texture = 'SAND'
         WP2FC = 0.50
-    if (sa > 0.70) and (sa < 0.91) and (si + cl*1.5 >= 0.15):
+    if (sa > 0.70) and (sa < 0.91) and (si + cl >= 0.15):
         texture = 'LOSA'
         WP2FC = 0.41
     if (cl > 0.07) and (cl < 0.20) and (sa >= 0.52):
