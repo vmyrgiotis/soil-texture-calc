@@ -1,3 +1,4 @@
+
 def soiltext(cl,si,sa):
 
     if (0 < cl < 10) and (0 < si < 15) and ( 85 < sa < 100):
