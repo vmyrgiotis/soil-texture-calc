@@ -1,3 +1,5 @@
+# ins: clay silt and sand as inputs (in %)
+# outs: texture name and saturated hydraulic conductivity (in cm per day)
 def soiltext(cl,si,sa):
 
     texture = np.nan 
