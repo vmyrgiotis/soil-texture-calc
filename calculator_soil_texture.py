@@ -1,38 +1,39 @@
-def soiltext(cl,sa,si):
-    if (sa >= 0.85) and (si + cl <= 0.15):
+def soiltext(cl,si,sa):
+
+    if (0 < cl < 10) and (0 < si < 15) and ( 85 < sa < 100):
         texture = 'SAND'
         WP2FC = 0.50
-    if (sa > 0.70) and (sa < 0.91) and (si + cl >= 0.15):
+    if (0 < cl < 15) and (0 < si < 30) and ( 70 < sa < 90):
         texture = 'LOSA'
         WP2FC = 0.41
-    if (cl > 0.07) and (cl < 0.20) and (sa >= 0.52):
+    if (0 < cl < 20) and (0 < si < 50) and ( 43 < sa < 85):
         texture = 'SALO'
         WP2FC = 0.44
-    if (cl > 0.25) and (cl < 0.30) and (si <= 0.28) and (sa >= 0.45):
+    if (35 < cl < 55) and (0 < si < 20) and ( 45 < sa < 65):
         texture = 'SNCL'
         WP2FC = 0.63
-    if (cl >= 0.35) and (sa >= 0.45) :
-        texture = 'SACL'
+    if (27 < cl < 40) and (40 < si < 73) and ( 0 < sa < 20):
+        texture = 'SCLO'
         WP2FC = 0.70
-    if (cl >= 0.07) and (cl <= 0.27) and (si >= 0.28) and (si <= 0.50) and (sa <= 0.52):
+    if (6 < cl < 28) and (26 < si < 50) and ( 23 < sa < 53):
         texture = 'LOAM'
         WP2FC = 0.50
-    if  (si >= 0.50) and (cl >= 0.17) and (cl <= 0.27):
+    if (0 < cl < 27) and (50 < si < 88) and ( 0 < sa < 50):
         texture = 'SILO'
         WP2FC = 0.35
-    if  (sa >= 0.20) and (sa <= 0.45) and (cl >= 0.27) and (cl <= 0.40):
+    if (28 < cl < 40) and (15 < si < 53) and ( 20 < sa < 40):
         texture = 'CLLO'
         WP2FC = 0.61
-    if  (si >= 0.80) and (cl <= 0.12):
+    if (0 < cl < 12) and (80 < si < 100) and ( 0 < sa < 20):
         texture = 'SILT'
         WP2FC = 0.20
-    if  (cl >= 0.27) and (cl <= 0.40) and (sa <= 0.20):
-        texture = 'SLCL'
+    if (20 < cl < 35) and ( 0 < si < 20) and ( 45 < sa < 80 ):
+        texture = 'SCLO'
         WP2FC = 0.58
-    if  (cl >= 0.40) and (si >= 0.40):
+    if (40 < cl < 60) and (40 < si < 60) and ( 0 < sa < 20):
         texture = 'SICL'
         WP2FC = 0.66
-    if  (cl >= 0.40) and (sa <= 0.45) and (si <= 0.40):
+    if (55 < cl < 100) and (0 < si < 40) and ( 0 < sa < 45):
         texture = 'CLAY'
         WP2FC = 0.71
 
